@@ -12,7 +12,7 @@
 <template>
               <div>
                            <h1>Signup Form</h1>
-                          <form @submit="signup">
+                          <form @submi.prevent="signup">
                             <div>
                                           <input type="text" placeholder="Enter Username" v-model="Username">
                             </div>
@@ -24,9 +24,9 @@
                                           <input type="password" placeholder="Enter Password" v-model="password">
                             </div>
               <div>
-                            
-                            <input type="Sign-Up" placeholder="Signup" v-model="signup">
+                            <input type="submit" value="Signup">
               </div>
-                          </form> 
+                          </form>
+                          {{ Username }} 
               </div>
 </template>
