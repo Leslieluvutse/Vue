@@ -24,17 +24,5 @@ import { RouterLink,RouterView  } from "vue-router";
 </template>
 
 <style scoped>
-.top-nav{
-  background-color: green;
-  padding: 14px 0;
-}
-.top-nav li{
-  list-style: none;
-  display: inline;
-}
-.top-nav .link{
-  color: white;
-  text-decoration: none;
-  padding: 14px 28px;
-}
+
 </style>
