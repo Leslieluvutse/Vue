@@ -6,13 +6,15 @@
    const password = ref('1233')
 
    function signup(){
-              console.log(Username.value,email.value,password.value)
+              console.log('${Username.value} ${email.value}${password.value}');
+              // connect to your API 
+              // axios.post(url,value)
    }
  </script>
 <template>
               <div>
                            <h1>Signup Form</h1>
-                          <form @submi.prevent="signup">
+                          <form @submit.prevent="signup">
                             <div>
                                           <input type="text" placeholder="Enter Username" v-model="Username">
                             </div>
