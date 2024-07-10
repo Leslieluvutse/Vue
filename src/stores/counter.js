@@ -5,5 +5,13 @@ export const useCounterStore = defineStore('counter', {
     return{
       count:0
     }
+  },
+  actions:{
+    increment(){
+      this.count++
+    },
+    decrement(){
+      this.count--
+    }
   }
 })

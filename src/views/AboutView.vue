@@ -1,8 +1,14 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
+<script setup>
+import { useCounterStore } from '@/stores/counter';
 
-<style>
-</style>
+const store =useCounterStore()
+</script>
+
+<template>
+  <main>
+    <h1>Welcome Home!</h1>
+    <v-btn @click="store.increment">Increment</v-btn>
+    {{ store.count }}
+    <v-btn @click="store.decrement">Decrement</v-btn>
+  </main>
+</template>
