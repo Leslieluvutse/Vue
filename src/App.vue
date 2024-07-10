@@ -4,21 +4,19 @@ import { RouterLink,RouterView  } from "vue-router";
 
 <template>
   <!-- Navigation -->
-<nav>
-  <div class="top-nav">
-    <ul>
-      <li><RouterLink to="/" class="link">Home</RouterLink></li>
-      <li><RouterLink to="/about" class="link">About</RouterLink></li>
-      <li><RouterLink to="/" class="link">Services</RouterLink></li>
-      <li><RouterLink to="/" class="link">Blog</RouterLink></li>
-      <li><RouterLink to="/" class="link">Contacts</RouterLink></li>
-      <li><RouterLink to="/" class="link">Login</RouterLink></li>
-      <li><RouterLink to="/signup" class="link">Signup</RouterLink></li>
-    </ul>
-  </div>
-</nav>
+  <v-toolbar
+  color="brown">
+
+<v-tab to="/home">Home</v-tab>
+<v-tab to="/About">About</v-tab>
+<v-tab to="">Cart</v-tab>
+<v-tab to="">Checkout</v-tab>
+<v-tab to="">Account</v-tab>
+<v-tab to="/Signup">Signup</v-tab>
+</v-toolbar>
    <!--Main Section  -->
    <RouterView/>
+   <RouterLink/>
 
    <!-- Footer -->
 </template>

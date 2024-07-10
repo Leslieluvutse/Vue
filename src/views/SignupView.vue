@@ -12,23 +12,34 @@
    }
  </script>
 <template>
-              <div>
-                           <h1>Signup Form</h1>
-                          <form @submit.prevent="signup">
-                            <div>
-                                          <input type="text" placeholder="Enter Username" v-model="Username">
-                            </div>
-                            <div>
-                                          <input type="email" placeholder="Enter Email" v-model
-                                          ="email">
-                            </div>
-                            <div>
-                                          <input type="password" placeholder="Enter Password" v-model="password">
-                            </div>
-              <div>
-                            <input type="submit" value="Signup">
-              </div>
-                          </form>
-                          {{ Username }} 
-              </div>
+              <v-sheet
+              class="mx-auto pa-12 mt-5"
+              max-width="500"
+              elevation="12">
+                            <v-form @submit.prevent="signup">
+                                          <v-text-field 
+                                          v-model="Username"
+                                          label="Enter Username"
+                                          type="text"
+                                          variant="outlined"></v-text-field>
+                                          <v-text-field 
+                                          v-model="email"
+                                          label="Enter Email"
+                                          type="email"
+                                          variant="outlined"></v-text-field>
+                                          <v-text-field
+                                          v-model="password"
+                                          label="Enter Password"
+                                          type="password"
+                                          variant="outlined"></v-text-field>
+                                         
+                                          <v-btn 
+                                          color="brown"
+                                          density="comfortable"
+                                          rounded="sm"
+                                          elevation="12"
+                                          type="Submit"
+                                          >signup</v-btn>
+                            </v-form>
+              </v-sheet>
 </template>
