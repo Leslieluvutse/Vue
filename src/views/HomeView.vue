@@ -7,7 +7,8 @@ const store =useCounterStore()
 <template>
   <main>
     <h1>Welcome Home!</h1>
-    <v-btn @click="store.count++">Increment</v-btn>
+    <v-btn @click="store.increment">Increment</v-btn>
     {{ store.count }}
+    <v-btn @click="store.decrement">Decrement</v-btn>
   </main>
 </template>
