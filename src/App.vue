@@ -9,9 +9,9 @@ import { RouterLink,RouterView  } from "vue-router";
 
 <v-tab to="/home">Home</v-tab>
 <v-tab to="/About">About</v-tab>
-<v-tab to="">Cart</v-tab>
-<v-tab to="">Checkout</v-tab>
-<v-tab to="">Account</v-tab>
+<v-tab to="/cart">Cart</v-tab>
+<v-tab to="">Services</v-tab>
+<v-tab to="">Login</v-tab>
 <v-tab to="/Signup">Signup</v-tab>
 </v-toolbar>
    <!--Main Section  -->
